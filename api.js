@@ -11,7 +11,7 @@ const router = express.Router();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors());
-app.use("/.netlify/functions/api", router);
+app.use("/demoapp/api/v1", router);
 
 const secretKey = "my_secure_secret_key_123!@#"; // Replace this with your secure secret key
 
