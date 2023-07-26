@@ -60,7 +60,7 @@ router.route("/users/:id").get(verifyToken, (req, res) => {
   });
 });
 
-router.route("/users").post(verifyToken,(req, res) => {
+router.route("/users").post((req, res) => {
   const user = req.body;
   dboperations.addUser(user)
     .then((rowsAffected) => {
