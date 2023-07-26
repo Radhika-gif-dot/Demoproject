@@ -1,7 +1,7 @@
 const config = {
     user:"sa",
     password:"ikart@123",
-    server:"127.0.0.1",
+    server:"192.168.1.4",
     database:"Itms",
     options:{
         trustedconnection: true,
