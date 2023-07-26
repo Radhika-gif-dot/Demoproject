@@ -67,12 +67,12 @@ router.route("/users").post((req, res) => {
       if (rowsAffected > 0) {
         res.status(201).json({ message: "User added successfully!" });
       } else {
-        res.status(500).json({ message: "Failed to add user." });
+        res.status(500).json({ message: error });
       }
     })
     .catch((error) => {
       console.log(error);
-      res.status(500).json({ message: "Failed to add user." });
+      res.status(500).json({ message: error });
     });
 });
 

@@ -1,12 +1,13 @@
 const config = {
-    user:"sa",
-    password:"ikart@123",
-    server:"192.168.1.4",
-    database:"Itms",
+    user:"krunalc",
+    password:"abc123###",
+    server:"ypq4avc0wo.database.windows.net",
+    port:1433,
+    database:"SaaS",
     options:{
         trustedconnection: true,
         enableArithAbort : true, 
-        instancename :'HASHTAGIKART'
+        instancename :'SQL SERVER 12.0.2000.8 - krunalc'
     }
 }
 module.exports = config; 
